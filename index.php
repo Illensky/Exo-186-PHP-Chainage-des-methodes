@@ -12,3 +12,12 @@
  *
  * 5. Utilisez le chaînage des méthodes pour mettre à jour le nom et le prix en une seule ligne.
  */
+
+require __DIR__ . "/Classes/VODService.php";
+
+$netflix = new VODService('netflix', 12.35);
+
+$netflix
+    ->setName('netflox')
+    ->setPrice(13.45)
+;
